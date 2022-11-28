@@ -1,0 +1,113 @@
+body{
+	background-image: url('sky.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+img {
+  float: right;
+}
+
+p {font-weight: bold; color: orangered;}
+		h1 {font-family: tahoma, helvetica, sans-serif;}
+		i {font-family: tahoma, helvetica, sans-serif;}
+		i {font-weight: bold; color: yellowgreen;}
+		#myHeader{
+			background-color: yellowgreen;
+			padding: 25px;
+			text-align: center;
+		}
+		.id{
+			background-color: royalblue;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			text-decoration: underline;
+		}
+		.floated {
+			background-color: LightGrey;
+			font-size: 1.5em;
+			font-family: arial, sans-serif;
+			padding: .2em;
+			margin-left:.5em;
+			margin-bottom: .5em;
+			float: left;
+			text-align: center;
+			width: 70%;
+		}
+
+		span{
+			color: skyblue;
+			border: 1px solid black;
+		}
+		.extra span{
+			color: inherit;
+		}
+
+a.nodec { text-decoration: none;}
+a:hover {color: brown;}
+li {color: firebrick;}
+h1 {background-color: limegreen;}
+h1, em {color:darkgreen;} 
+ul {margin-left: 20px;}
+ul ul {font-size: .8em;}
+
+span { color:brown; font-size: .6em; height: 1em;}
+.super {position: relative; top:-1ex;}
+.sub {position: relative; bottom: -1ex}
+.text {position:absolute; top: 25px; left: 100px;
+z-index: 3; font-size: 20pt; font-family: 'Times New Roman', Times, serif;}
+.background_image {position: absolute; 
+        top: 0px; left: 0px; z-index: 1;}
+.foreground_image {position: absolute;
+    top: 25px; left: 100px; z-index: 2;}
+
+
+
+nav { font-weight: bold;
+    color:white;
+    border: 2px solid seagreen;
+    text-align: center;
+width: 10em;
+background-color: seagreen;}
+
+nav ul { display: none;
+list-style: none;
+margin: 0;
+padding: 0;}
+
+nav:hover ul {display: block;}
+nav ul li {border-top: 4px solid seagreen;
+background-color: lightgoldenrodyellow;
+width: 10em;
+text-align: left;
+position: relative;
+color: black;}
+
+nav ul li:hover { background-color:lightgoldenrodyellow;}
+a {text-decoration: none;}
+
+@media screen and (min-width:200px) {
+    body {
+        background-color: lemonchiffon;
+    }
+}
+
+@media print {
+    body {background-color: white;}
+    p {font-size: 14pt;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+}
+
