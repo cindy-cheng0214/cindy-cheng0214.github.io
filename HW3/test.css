@@ -1,0 +1,31 @@
+label{font-weight: bold;}
+
+
+nav{font-weight: bold;}
+	
+nav ul{float: right;
+		  position: absolute;
+		  right: 60%;
+		  top: 20%;}
+
+.container{margin-left: auto;
+	  	   margin-right: auto;		
+	       width: 100%;} 
+
+@media screen and (min-width:200px) {
+    body {
+        background-color: lemonchiffon;
+    }
+}
+
+@media print {
+    body {background-color: white;}
+    p {font-size: 14pt;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+}
+
+	       
+
+	       
+
