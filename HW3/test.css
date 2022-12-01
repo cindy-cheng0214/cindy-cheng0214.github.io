@@ -12,6 +12,15 @@ nav ul{float: right;
 	  	   margin-right: auto;		
 	       width: 100%;} 
 
+
+
+#textarea{
+	position: relative;
+	margin: 10px 2% 20px 6%;
+	width: 37%;
+	
+}
+
 @media screen and (min-width:200px) {
     body {
         background-color: lemonchiffon;
