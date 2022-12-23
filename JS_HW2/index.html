@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Calculator</title>
+</head>
+<body>
+	<link rel="stylesheet" href="JS Calculator.css">
+	<form action="#">
+		<div class="c" id="content">
+		<h2>JS Calculator</h2>
+		<p><label>
+			Number 1<br><input class="input" id="number1" type="number" name="number1">
+		</label>
+		<br><label>
+			Number 2<br><input class="input" id="number2" type="number" name="number1">
+		</label>
+		<br><label>
+			Operate way?<br>
+			<select class="select" name="operate" id="operate" onchange="calculate();">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+		</label>
+		<br><input class="button" id="calculate" type="button" value="Add"></p>
+		<p>Result = <span id="result"></span></p>
+	</div>
+	</form>
+</body>
+<script>
+	function start() {
+		var button = document.getElementById("calculate");
+		button.addEventListener("click", calculate, false);
+	}
+
+	function calculate() {
+		var num1 = document.getElementById("number1").value;
+		var num2 = document.getElementById("number2").value;
+
+		var op = document.getElementById("operate").value;
+
+		if(op == "+") {
+			plus(num1, num2);
+		} else if(op == "-") {
+			minus(num1, num2);
+		} else if(op == "*") {
+			mutiply(num1, num2);
+		} else if(op == "/") {
+			divide(num1, num2);
+		}
+	}
+
+	function plus(num1, num2) {
+		var result = parseFloat(num1) + parseFloat(num2);
+		document.getElementById("result").innerHTML = result;		
+	}
+
+	function minus(num1, num2) {
+		var result = parseFloat(num1) - parseFloat(num2);
+		document.getElementById("result").innerHTML = result;
+	}
+
+	function mutiply(num1, num2) {
+		var result = parseFloat(num1) * parseFloat(num2);
+		document.getElementById("result").innerHTML = result;
+	}
+
+	function divide(num1, num2) {
+		var result = parseFloat(num1) / parseFloat(num2);
+		document.getElementById("result").innerHTML = result;
+	}
+
+	window.addEventListener("load", start, false);
+
+</script>
+</html>

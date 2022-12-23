@@ -1,0 +1,46 @@
+.c {
+	font-family: sans-serif;
+	width: 400px;
+	height: 340px;
+	text-align: center;
+	margin: auto;
+	border: solid;
+	border-width: 1px;
+	border-color: gray;
+	border-radius: 10px;
+	background-color: lightgray;
+}
+
+.input {
+	margin-top: 5px;
+	margin-bottom: 5px;
+    width: 250px;
+    height: 26px;
+    border: 1px solid;
+    padding: 1px!important; 
+}
+
+.select {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width:254px;
+	height: 30px;
+    padding:1px;
+    border: 1px solid
+}
+
+.button {
+	color: white;
+	margin-top: 5px;
+	width: 254px;
+	height: 30px;
+	background-color: orange;
+	border: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: black;
+}
+
+.button:hover {
+	background-color: darkorange;
+}
