@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p id="bonus"></p>
+<script>
+	var text=window.prompt('input data');
+	var query=window.prompt('input a char to search');
+	var index1=text.indexOf(query);
+	var index2=text.lastIndexOf(query);
+	var index3=text.indexOf(query,3);
+	document.getElementById('bonus').innerHTML=index1+"<br>"+index2+"<br>"+index3;
+</script>
+</body>
+</html>
